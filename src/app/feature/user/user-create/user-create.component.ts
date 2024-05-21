@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-create.component.scss']
 })
 export class UserCreateComponent {
+  title: string = 'Data binding example';
+  firstName: string = 'John';
+  lastName: string = 'Doe';
 
+  onSave() {
+    alert(`Fullname: ${this.firstName} ${this.lastName}`)
+  }
 }
